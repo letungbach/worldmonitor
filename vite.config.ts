@@ -841,6 +841,7 @@ export default defineConfig({
       },
       input: {
         main: resolve(__dirname, 'index.html'),
+        about: resolve(__dirname, 'src/about.html'),
         settings: resolve(__dirname, 'settings.html'),
         liveChannels: resolve(__dirname, 'live-channels.html'),
       },
