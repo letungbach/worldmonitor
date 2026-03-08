@@ -1,191 +1,448 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Le Tung Bach, Ph.D. | AI Founder & Executive</title>
-  <script src="https://cdn.tailwindcss.com"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV - Le Tung Bach, Ph.D.</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&display=swap"
+        rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+
+        /* Print optimization to invert back to light mode for printing */
+        @media print {
+            .no-print {
+                display: none;
+            }
+
+            body {
+                background-color: white;
+                color: black;
+                p: 0;
+            }
+
+            .max-w-6xl {
+                max-width: 100%;
+                margin: 0;
+                box-shadow: none;
+                border: none;
+            }
+
+            header,
+            aside {
+                background-color: white !important;
+                border-color: #e2e8f0 !important;
+            }
+
+            h1,
+            h2,
+            h3,
+            h4,
+            .text-indigo-400,
+            .text-slate-300 {
+                color: black !important;
+            }
+
+            .text-slate-400,
+            .text-slate-500 {
+                color: #4a5568 !important;
+            }
+
+            .border-indigo-500,
+            .border-l-indigo-600 {
+                border-color: #4c51bf !important;
+            }
+
+            .skill-tag {
+                background-color: white !important;
+                border-color: #e2e8f0 !important;
+                color: black !important;
+            }
+
+            .bg-slate-800,
+            .bg-indigo-600,
+            .bg-indigo-100 {
+                background-color: white !important;
+                color: black !important;
+                border: 1px solid #e2e8f0;
+            }
+
+            .list-disc {
+                color: black !important;
+            }
+        }
+
+        .skill-tag {
+            @apply bg-slate-800 border border-slate-700 px-2 py-0.5 rounded text-[11px] font-medium text-slate-300;
+        }
+    </style>
 </head>
 
-<body class="bg-slate-950 text-slate-100 font-sans">
+<body class="bg-slate-950 text-slate-300 leading-relaxed antialiased p-4 md:p-10">
 
-<!-- HERO -->
-<section class="relative overflow-hidden">
-  <div class="absolute inset-0 bg-gradient-to-br from-indigo-600/20 via-purple-600/10 to-cyan-600/20"></div>
+    <div class="max-w-6xl mx-auto bg-slate-900 shadow-2xl min-h-screen border-t-8 border-indigo-600">
 
-  <div class="relative max-w-6xl mx-auto px-6 py-24">
-    <h1 class="text-5xl md:text-6xl font-bold tracking-tight">
-      Le Tung Bach, Ph.D. 🚀
-    </h1>
+        <header class="p-8 md:p-12 border-b border-slate-800 bg-slate-900/50">
+            <div class="flex flex-col md:flex-row justify-between items-start gap-8">
+                <div class="flex-1">
+                    <h1 class="text-4xl font-900 tracking-tighter text-white uppercase">Le Tung Bach, <span
+                            class="text-indigo-400 font-light">Ph.D.</span></h1>
+                    <p class="text-xl text-indigo-300 font-semibold mt-2">AI-Driven Delivery & Operations Leader |
+                        Scrum/Agile Enthusiast | Hands-on AI/LLM Specialist</p>
 
-    <p class="mt-6 text-xl text-slate-300 max-w-3xl">
-      AI Researcher · Multi-Venture Founder · Capital Strategist  
-      <br>
-      Architecting AI systems that scale intelligence, sustainability, and global impact.
-    </p>
+                    <div class="flex flex-wrap gap-y-2 gap-x-6 mt-6 text-sm font-medium text-slate-400">
+                        <span class="flex items-center gap-2">📞 0906 376 868</span>
+                        <span class="flex items-center gap-2 text-indigo-300 underline">📍 Hanoi, Vietnam</span>
+                        <a href="mailto:b@giong.ai" class="flex items-center gap-2 hover:text-indigo-200 italic">📧
+                            b@giong.ai</a>
+                        <a href="https://orcid.org/0009-0006-3525-6710"
+                            class="flex items-center gap-2 font-mono text-xs">ORCID: 0009-0006-3525-6710</a>
+                    </div>
 
-    <div class="mt-8 flex flex-wrap gap-4 text-sm">
-      <span class="px-4 py-2 rounded-full bg-white/10">📍 Hanoi, Vietnam</span>
-      <span class="px-4 py-2 rounded-full bg-white/10">💰 $97M+ International ODA Managed</span>
-      <span class="px-4 py-2 rounded-full bg-white/10">🤖 AI × Finance × Policy</span>
+                    <div class="flex flex-wrap gap-3 mt-6">
+                        <span
+                            class="px-3 py-1 bg-indigo-600 text-white text-[10px] font-bold rounded-sm tracking-widest uppercase shadow-md">Founder:
+                            giong.ai (Multi-AI Agents)</span>
+                        <span
+                            class="px-3 py-1 bg-slate-700 text-slate-100 text-[10px] font-bold rounded-sm tracking-widest uppercase">mulala.art</span>
+                        <span
+                            class="px-3 py-1 bg-slate-700 text-slate-100 text-[10px] font-bold rounded-sm tracking-widest uppercase">unitedcoffee.vn</span>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="grid grid-cols-1 md:grid-cols-12">
+
+            <div class="md:col-span-8 p-8 md:p-12 border-r border-slate-800">
+
+                <section class="mb-12">
+                    <h2
+                        class="text-xs font-black uppercase tracking-[0.2em] text-indigo-400 mb-4 flex items-center gap-3">
+                        Professional Summary <span class="h-[1px] bg-slate-800 flex-1"></span>
+                    </h2>
+                    <p class="text-slate-300 text-[15px] leading-relaxed italic border-l-4 border-slate-800 pl-4">
+                        Multidisciplinary Ph.D. in Management with 15+ years in operational leadership, delivery
+                        management, and project direction (equivalent to General Manager / Delivery Lead roles). Proven
+                        in building and scaling AI-first teams and workflows, with hands-on application of AI/LLMs for
+                        automation, predictive planning, reporting, dashboards, and process optimization. Successfully
+                        led cross-functional, international projects securing <strong class="text-indigo-300">$97M+ in
+                            funding</strong> and deploying AI solutions (e.g., Multi-AI-Agent systems, LLM-based
+                        services like TOURGPT and AUCOBERT). Certified in Agile PM, Six Sigma, and multiple AI/ML
+                        engineering programs. Fluent English (professional/academic level, equivalent to IELTS 7.0+);
+                        French fluent; eager to drive AI-first culture in an international German product team as a
+                        core/key member in Hanoi.
+                    </p>
+                </section>
+
+                <section class="mb-12">
+                    <h2
+                        class="text-xs font-black uppercase tracking-[0.2em] text-indigo-400 mb-6 flex items-center gap-3">
+                        Recent AI Publications & Research <span class="h-[1px] bg-slate-800 flex-1"></span>
+                    </h2>
+                    <div class="space-y-6">
+                        <div class="bg-slate-800 p-5 rounded-lg border border-slate-700 shadow-inner">
+                            <div class="flex justify-between items-start gap-4">
+                                <h4 class="font-bold text-white text-base">Proptech Adoption Behavioral Analysis</h4>
+                                <span class="text-xs font-mono text-indigo-300">arXiv:2024.XXXXX</span>
+                            </div>
+                            <p class="text-sm text-slate-300 mt-2">Analysis of behavioral and acceptance models relevant
+                                to AI implementation within the Proptech sector.</p>
+                        </div>
+                        <div class="bg-slate-800 p-5 rounded-lg border border-slate-700 shadow-inner">
+                            <h4 class="font-bold text-white text-base mb-2">Active AI Research Initiatives</h4>
+                            <ul class="list-disc ml-5 text-sm text-slate-300 space-y-2">
+                                <li><strong class="text-indigo-200">GraphRAG:</strong> Developing knowledge
+                                    graph-augmented retrieval models for supply chain predictive transparency.</li>
+                                <li><strong class="text-indigo-200">MoE-JEPA:</strong> Investigating Mixture-of-Experts
+                                    Joint-Embedding Predictive Architectures.</li>
+                                <li><strong class="text-indigo-200">Ethical AI:</strong> Researching bias mitigation and
+                                    multimodal compliance in deployed models.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="mb-12">
+                    <h2
+                        class="text-xs font-black uppercase tracking-[0.2em] text-indigo-400 mb-6 flex items-center gap-3">
+                        Key Strengths Aligned to Role <span class="h-[1px] bg-slate-800 flex-1"></span>
+                    </h2>
+                    <div class="grid grid-cols-1 gap-6">
+                        <div class="bg-slate-950 p-4 rounded-lg border border-slate-800">
+                            <h4 class="font-bold text-white text-sm mb-1">Agile/Scrum & Delivery Leadership</h4>
+                            <p class="text-sm text-slate-400">10+ years leading operational/delivery teams as Project
+                                Director, CFO, and startup founder — driving end-to-end delivery, process optimization,
+                                and team performance in fast-paced, multidisciplinary environments.</p>
+                        </div>
+                        <div class="bg-slate-950 p-4 rounded-lg border border-slate-800">
+                            <h4 class="font-bold text-white text-sm mb-1">Hands-on AI/LLM Expertise</h4>
+                            <p class="text-sm text-slate-400">Built and deployed LLM-powered workflows (LangChain,
+                                Hugging Face, PyTorch/TensorFlow) for automation, predictive analytics (e.g., supply
+                                chain traceability in coffee industry), reporting/dashboards, and AI agents. Promoted
+                                AI-first approaches in startups (giong.ai MAAS orchestration).</p>
+                        </div>
+                        <div class="bg-slate-950 p-4 rounded-lg border border-slate-800 border-l-4 border-indigo-500">
+                            <h4 class="font-bold text-white text-sm mb-1">Operational & General Management</h4>
+                            <p class="text-sm text-slate-400">10+ years as GM-equivalent (CFO/Project Director roles
+                                managing multimillion-dollar projects, budgets, compliance, and international
+                                stakeholders — World Bank, ADB, AFD, JAICA).</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section>
+                    <h2
+                        class="text-xs font-black uppercase tracking-[0.2em] text-indigo-400 mb-8 flex items-center gap-3">
+                        Professional Experience <span class="h-[1px] bg-slate-800 flex-1"></span>
+                    </h2>
+
+                    <div class="mb-12 relative pl-6 border-l-2 border-indigo-900">
+                        <div
+                            class="absolute w-3 h-3 bg-indigo-500 rounded-full -left-[7px] top-1 shadow-lg shadow-indigo-500/50">
+                        </div>
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="font-bold text-xl text-white leading-none">Founder & AI Lead</h3>
+                            <span
+                                class="text-xs font-bold bg-indigo-950 text-indigo-300 px-2 py-1 rounded border border-indigo-800">2025
+                                – Present</span>
+                        </div>
+                        <p class="text-indigo-300 font-semibold mb-3">giong.ai | Hanoi, Vietnam</p>
+                        <ul class="list-disc ml-5 text-[14px] text-slate-300 space-y-2">
+                            <li>Lead development and deployment of <strong>Multi-AI-Agent System (MAAS)</strong> —
+                                hands-on orchestration of LLM/agents for automation, predictive planning, and workflow
+                                efficiency using LangChain, PyTorch, Hugging Face Transformers.</li>
+                            <li>Built AI-driven workflows integrating LLMs for real-time reporting, dashboards, and
+                                predictive insights (e.g., <strong>TOURGPT</strong> for tourism,
+                                <strong>AUCOBERT</strong> for real estate services).
+                            </li>
+                            <li>Promoted AI-first culture in cross-functional team — emphasizing ethical AI, multimodal
+                                models, and automation to drive operational excellence.</li>
+                            <li>Acted as de-facto Delivery Lead / General Manager for AI product lifecycle, from
+                                ideation to deployment on cloud (AWS/Azure/Google Vertex).</li>
+                        </ul>
+                    </div>
+
+                    <div class="mb-12 relative pl-6 border-l-2 border-slate-800">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="font-bold text-xl text-white leading-none">Founder & Platform Lead</h3>
+                            <span class="text-xs font-bold text-slate-500 uppercase">2019 – Present</span>
+                        </div>
+                        <p class="text-slate-400 font-semibold mb-3 italic">mulala.art & mulala.edu.vn | Hanoi, Vietnam
+                        </p>
+                        <ul class="list-disc ml-5 text-[14px] text-slate-300 space-y-2">
+                            <li>Directed art + technology platform with <strong>NFT/immersive deployments</strong>
+                                (OpenSea, ETH/Solana) — managed full delivery cycles, team collaboration, and
+                                international user growth.</li>
+                            <li>Applied AI for content curation, predictive user engagement, and automated
+                                reporting/dashboards.</li>
+                        </ul>
+                    </div>
+
+                    <div class="mb-12 relative pl-6 border-l-2 border-slate-800">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="font-bold text-xl text-white leading-none">Founder & Operations Lead</h3>
+                            <span class="text-xs font-bold text-slate-500 uppercase">2015 – Present</span>
+                        </div>
+                        <p class="text-slate-400 font-semibold mb-3 italic">unitedcoffee.vn | Dalat/Hanoi, Vietnam</p>
+                        <ul class="list-disc ml-5 text-[14px] text-slate-300 space-y-2">
+                            <li>Built sustainable supply chain from farm-to-cup — led predictive planning models
+                                (ongoing <strong>GraphRAG AI project</strong> for traceability/transparency in
+                                Vietnamese coffee).</li>
+                            <li>Managed operational delivery, budgeting, and team scaling in international context
+                                (export/ethical sourcing focus).</li>
+                        </ul>
+                    </div>
+
+                    <div class="mb-12 relative pl-6 border-l-2 border-slate-800">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="font-bold text-xl text-slate-100 leading-none">Chief Representative & Project
+                                Director</h3>
+                            <span class="text-xs font-bold text-slate-500 uppercase">2013 – 2018</span>
+                        </div>
+                        <p class="text-slate-400 font-semibold mb-3 italic">National Housing Organization JSC (nhojs.vn)
+                        </p>
+                        <ul class="list-disc ml-5 text-[14px] text-slate-400 space-y-2">
+                            <li>Served as operational leader / GM equivalent — oversaw >20 real estate projects, full
+                                delivery from planning to execution, budget control, and stakeholder management.</li>
+                            <li>Deployed full-stack ERP system — hands-on automation and reporting improvements.</li>
+                        </ul>
+                    </div>
+
+                    <div class="mb-12 relative pl-6 border-l-2 border-slate-800">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="font-bold text-xl text-slate-100 leading-none uppercase tracking-tight">CFO &
+                                Project Director Roles</h3>
+                            <span class="text-xs font-bold text-slate-500 uppercase">2006 – 2013</span>
+                        </div>
+                        <p class="text-slate-400 font-semibold mb-3 italic text-xs leading-relaxed">Diamond
+                            Entertainment Jsc, Thien Nhan Group, State Bank of Vietnam & MHB-BIDV</p>
+                        <ul class="list-disc ml-5 text-[14px] text-slate-400 space-y-2">
+                            <li>Led multimillion-dollar international credit/ODA projects (<strong>$97M+
+                                    secured/managed</strong> from AFD, World Bank, ADB, JAICA) — equivalent to Delivery
+                                Lead / GM in operational oversight, compliance, and predictive financial planning.</li>
+                            <li>Directed cross-border teams and ensuring on-time delivery across Cambodia and Vietnam.
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+            </div>
+
+            <aside class="md:col-span-4 p-8 md:p-12 bg-slate-950/50">
+
+                <section class="mb-12">
+                    <h2 class="text-xs font-black uppercase tracking-[0.2em] text-white mb-6">Education</h2>
+                    <div class="space-y-6">
+                        <div class="border-l-2 border-indigo-500 pl-3">
+                            <p class="text-[10px] font-bold text-indigo-400 uppercase">2025 cont'</p>
+                            <h4 class="text-sm font-bold text-white">Master in Data Science</h4>
+                            <p class="text-xs text-slate-400 font-medium">Illinois Institute of Technology (iit.edu) ·
+                                Online, USA</p>
+                        </div>
+                        <div class="border-l-2 border-slate-700 pl-3">
+                            <p class="text-[10px] font-bold text-slate-500 uppercase">2024-2025</p>
+                            <h4 class="text-sm font-bold text-white">Diploma in DevOps Eng.</h4>
+                            <p class="text-xs text-slate-400 font-medium">Alison - CPD Certified with Google · Online,
+                                USA</p>
+                        </div>
+                        <div class="border-l-2 border-slate-700 pl-3">
+                            <p class="text-[10px] font-bold text-slate-500 uppercase">2023</p>
+                            <h4 class="text-sm font-bold text-white">Ph.D. in Management</h4>
+                            <p class="text-xs text-slate-400 font-medium">Swiss School of Management Research Center ·
+                                Switzerland</p>
+                        </div>
+                        <div class="border-l-2 border-slate-700 pl-3">
+                            <p class="text-[10px] font-bold text-slate-500 uppercase">2012</p>
+                            <h4 class="text-sm font-bold text-white">Executive MBA</h4>
+                            <p class="text-xs text-slate-400 font-medium">University of Hawaii, Shidler College of
+                                Business · Hawaii, USA</p>
+                        </div>
+                        <div class="border-l-2 border-slate-700 pl-3">
+                            <p class="text-[10px] font-bold text-slate-500 uppercase">2006</p>
+                            <h4 class="text-sm font-bold text-white">BBA Erasmus+</h4>
+                            <p class="text-xs text-slate-400 font-medium">The London Graduate School of Management ·
+                                London, UK</p>
+                        </div>
+                        <div class="border-l-2 border-slate-700 pl-3">
+                            <p class="text-[10px] font-bold text-slate-500 uppercase">2005</p>
+                            <h4 class="text-sm font-bold text-white">BBA in Financial Market</h4>
+                            <p class="text-xs text-slate-400 font-medium">ESCP - La Grande École de Gestion et de
+                                Finance (1st Ranking) · Paris, France</p>
+                        </div>
+                        <div class="border-l-2 border-slate-700 pl-3">
+                            <p class="text-[10px] font-bold text-slate-500 uppercase">2004</p>
+                            <h4 class="text-sm font-bold text-white">Bachelor of Technology</h4>
+                            <p class="text-xs text-slate-400 font-medium">Université Paris-Est Créteil, IUT de
+                                Fontainebleau (5th Ranking) · Paris, France</p>
+                        </div>
+                        <div class="border-l-2 border-slate-700 pl-3">
+                            <p class="text-[10px] font-bold text-slate-500 uppercase">2002</p>
+                            <h4 class="text-sm font-bold text-white">Cours de la civilization française</h4>
+                            <p class="text-xs text-slate-400 font-medium">Université Paris-Sorbonne · Paris, France</p>
+                        </div>
+                        <div class="border-l-2 border-slate-700 pl-3">
+                            <p class="text-[10px] font-bold text-slate-500 uppercase">2001</p>
+                            <h4 class="text-sm font-bold text-white">Baccalaureat maj in math</h4>
+                            <p class="text-xs text-slate-400 font-medium">Hanoi-Amsterdam High School for the Gifted ·
+                                Hanoi, VN</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="mb-12">
+                    <h2 class="text-xs font-black uppercase tracking-[0.2em] text-white mb-6">Technical Skillset</h2>
+
+                    <div class="space-y-6">
+                        <div>
+                            <p class="text-[10px] font-bold text-indigo-400 uppercase mb-3">AI/LLM Hands-on</p>
+                            <div class="flex flex-wrap gap-1.5">
+                                <span class="skill-tag">LangChain</span> <span class="skill-tag">Hugging Face</span>
+                                <span class="skill-tag">PyTorch</span> <span class="skill-tag">TensorFlow</span>
+                                <span class="skill-tag">Keras</span> <span class="skill-tag">MXNet</span>
+                                <span class="skill-tag">Ray</span> <span class="skill-tag">Horovod</span>
+                                <span class="skill-tag">ONNX</span> <span class="skill-tag">Automation</span>
+                                <span class="skill-tag">Predictive Planning</span>
+                                <span class="skill-tag">Multimodal AI</span>
+                            </div>
+                        </div>
+                        <div>
+                            <p class="text-[10px] font-bold text-indigo-400 uppercase mb-3">Programming & Cloud</p>
+                            <div class="flex flex-wrap gap-1.5">
+                                <span class="skill-tag">Python</span> <span class="skill-tag">Go</span>
+                                <span class="skill-tag">Scala</span> <span class="skill-tag">JavaScript/React</span>
+                                <span class="skill-tag">Terraform</span> <span class="skill-tag">AWS/Azure</span>
+                                <span class="skill-tag">Google Vertex</span> <span class="skill-tag">Kubernetes</span>
+                                <span class="skill-tag">Docker</span> <span class="skill-tag">SQL/NoSQL</span>
+                            </div>
+                        </div>
+                        <div>
+                            <p class="text-[10px] font-bold text-indigo-400 uppercase mb-3">Process & PM</p>
+                            <div class="flex flex-wrap gap-1.5">
+                                <span class="skill-tag">Agile (Certified)</span> <span class="skill-tag">Scrum</span>
+                                <span class="skill-tag">Six Sigma Green Belt</span> <span class="skill-tag">PM
+                                    Frameworks</span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="mb-12">
+                    <h2 class="text-xs font-black uppercase tracking-[0.2em] text-white mb-6">Certifications</h2>
+                    <ul class="text-[12px] space-y-3.5 text-slate-300 leading-snug">
+                        <li class="flex gap-2"><span>•</span> Microsoft AI & ML Engineering</li>
+                        <li class="flex gap-2"><span>•</span> IBM AI Engineering/Developer</li>
+                        <li class="flex gap-2"><span>•</span> Google Generative AI</li>
+                        <li class="flex gap-2"><span>•</span> Green Belt Six Sigma & Agile PM</li>
+                        <li class="flex gap-2"><span>•</span> Harvard CS50.AI/Python</li>
+                        <li class="flex gap-2"><span>•</span> Google IT Automation</li>
+                    </ul>
+                </section>
+
+                <section class="mb-12">
+                    <h2 class="text-xs font-black uppercase tracking-[0.2em] text-white mb-6">Languages</h2>
+                    <div class="space-y-3.5">
+                        <div class="flex justify-between items-center text-sm">
+                            <span class="font-semibold text-slate-100">Vietnamese</span>
+                            <span class="text-[10px] font-bold text-slate-500 uppercase">Native</span>
+                        </div>
+                        <div class="flex justify-between items-center text-sm">
+                            <span class="font-semibold text-indigo-300">English</span>
+                            <span class="text-[10px] font-bold text-indigo-400 uppercase">IELTS 7.0+</span>
+                        </div>
+                        <div class="flex justify-between items-center text-sm">
+                            <span class="font-semibold text-slate-100">French</span>
+                            <span class="text-[10px] font-bold text-slate-500 uppercase">Fluent</span>
+                        </div>
+                        <div class="flex justify-between items-center text-sm">
+                            <span class="font-semibold text-slate-500">German</span>
+                            <span class="text-[10px] font-bold text-indigo-500 uppercase italic">Learning</span>
+                        </div>
+                    </div>
+                </section>
+
+                <section>
+                    <h2 class="text-xs font-black uppercase tracking-[0.2em] text-white mb-6">Personality</h2>
+                    <p class="text-[12px] text-slate-400 leading-relaxed italic border-l-2 border-slate-800 pl-3">
+                        Organized, communicative, adaptable — thrives in international, work-life balance environments
+                        as a core team member.
+                    </p>
+                </section>
+
+            </aside>
+        </div>
     </div>
-  </div>
-</section>
 
-<!-- EXPERIENCE -->
-<section class="max-w-6xl mx-auto px-6 py-20">
-  <h2 class="text-3xl font-semibold mb-12">🏢 Executive & Professional Experience</h2>
-
-  <div class="space-y-10">
-
-    <!-- giong.ai -->
-    <div class="border-l-2 border-indigo-500 pl-6">
-      <h3 class="text-xl font-semibold">Multi AI Agents System — giong.ai 🤖</h3>
-      <p class="text-slate-400 text-sm">Hanoi · 2025–Present</p>
-      <p class="mt-3 text-slate-300">
-        Founder and system architect developing Multi-AI-Agent Systems (MAAS), MCP-based orchestration,
-        domain-specific LLMs (TOURGPT, AUCOBERT), and enterprise automation infrastructure.
-      </p>
+    <div class="max-w-6xl mx-auto my-8 text-center no-print">
+        <button onclick="window.print()"
+            class="bg-indigo-600 text-white px-8 py-3 rounded text-sm font-black uppercase tracking-widest hover:bg-indigo-700 transition shadow-2xl shadow-indigo-500/30">
+            Download PDF / Print (A4 optimized)
+        </button>
     </div>
-
-    <!-- mulala -->
-    <div class="border-l-2 border-purple-500 pl-6">
-      <h3 class="text-xl font-semibold">Platform for Art — mulala.art & mulala.edu.vn 🎨</h3>
-      <p class="text-slate-400 text-sm">Hanoi · 2019–Present</p>
-      <p class="mt-3 text-slate-300">
-        Built immersive art exhibition platforms integrating AI, blockchain, NFTs, and education.
-        Bridging cultural heritage with emerging technology.
-      </p>
-    </div>
-
-    <!-- unitedcoffee -->
-    <div class="border-l-2 border-amber-500 pl-6">
-      <h3 class="text-xl font-semibold">Farming Technology — unitedcoffee.vn ☕</h3>
-      <p class="text-slate-400 text-sm">Dalat · 2015–Present</p>
-      <p class="mt-3 text-slate-300">
-        Developed vertically integrated specialty coffee ecosystem (grow, process, roast, brew).
-        Integrating AI-driven supply chain transparency and sustainability frameworks.
-      </p>
-    </div>
-
-    <!-- NHO -->
-    <div class="border-l-2 border-cyan-500 pl-6">
-      <h3 class="text-xl font-semibold">Chief Representative & Project Director — National Housing Organization (nhojs.vn)</h3>
-      <p class="text-slate-400 text-sm">Hanoi & HCMC · 2013–2018</p>
-      <p class="mt-3 text-slate-300">
-        Led real estate development portfolio of 20+ projects.
-        Implemented full-stack ERP enterprise systems and structured investment governance.
-      </p>
-    </div>
-
-    <!-- Cambodia -->
-    <div class="border-l-2 border-emerald-500 pl-6">
-      <h3 class="text-xl font-semibold">CFO & Investment Officer — Diamond Entertainment JSC</h3>
-      <p class="text-slate-400 text-sm">Phnom Penh, Cambodia · 2010–2013</p>
-      <p class="mt-3 text-slate-300">
-        Oversaw cross-border investment operations, capital structuring,
-        and financial governance in emerging Southeast Asian markets.
-      </p>
-    </div>
-
-    <!-- Thien Nhan -->
-    <div class="border-l-2 border-pink-500 pl-6">
-      <h3 class="text-xl font-semibold">CFO & Project Director — Thien Nhan Group</h3>
-      <p class="text-slate-400 text-sm">Ho Chi Minh City · 2009–2012</p>
-      <p class="mt-3 text-slate-300">
-        Directed financial strategy, large-scale property investments,
-        and institutional capital partnerships.
-      </p>
-    </div>
-
-    <!-- State Bank -->
-    <div class="border-l-2 border-indigo-400 pl-6">
-      <h3 class="text-xl font-semibold">International Credit Project Manager — State Bank of Vietnam & MHB-BIDV 💼</h3>
-      <p class="text-slate-400 text-sm">Vietnam · 2006–2009</p>
-      <p class="mt-3 text-slate-300">
-        Managed $97M+ international ODA funding (World Bank, AFD, ADB, JAICA).
-        Structured financial compliance, reporting, and multilateral coordination.
-      </p>
-    </div>
-
-  </div>
-</section>
-
-<!-- EDUCATION -->
-<section class="bg-slate-900/60 border-y border-white/5">
-  <div class="max-w-6xl mx-auto px-6 py-20">
-    <h2 class="text-3xl font-semibold mb-12">🎓 Education</h2>
-
-    <div class="grid md:grid-cols-2 gap-8">
-
-      <div class="bg-white/5 p-6 rounded-xl">
-        <h3 class="font-semibold">Master in Data Science</h3>
-        <p class="text-slate-400 text-sm">Illinois Institute of Technology · Online, USA · 2025 (Cont.)</p>
-      </div>
-
-      <div class="bg-white/5 p-6 rounded-xl">
-        <h3 class="font-semibold">Diploma in DevOps Engineering</h3>
-        <p class="text-slate-400 text-sm">Alison (CPD Certified with Google) · 2024–2025</p>
-      </div>
-
-      <div class="bg-white/5 p-6 rounded-xl">
-        <h3 class="font-semibold">Ph.D. in Management</h3>
-        <p class="text-slate-400 text-sm">Swiss School of Management · Switzerland · 2023</p>
-      </div>
-
-      <div class="bg-white/5 p-6 rounded-xl">
-        <h3 class="font-semibold">Executive MBA</h3>
-        <p class="text-slate-400 text-sm">University of Hawaii, Shidler College of Business · 2012</p>
-      </div>
-
-      <div class="bg-white/5 p-6 rounded-xl">
-        <h3 class="font-semibold">BBA Erasmus+</h3>
-        <p class="text-slate-400 text-sm">London Graduate School of Management · 2006</p>
-      </div>
-
-      <div class="bg-white/5 p-6 rounded-xl">
-        <h3 class="font-semibold">BBA in Financial Market</h3>
-        <p class="text-slate-400 text-sm">ESCP Europe · Paris · 2005</p>
-      </div>
-
-      <div class="bg-white/5 p-6 rounded-xl">
-        <h3 class="font-semibold">Bachelor of Technology</h3>
-        <p class="text-slate-400 text-sm">Université Paris-Est Créteil · 2004</p>
-      </div>
-
-      <div class="bg-white/5 p-6 rounded-xl">
-        <h3 class="font-semibold">Cours de la Civilisation Française</h3>
-        <p class="text-slate-400 text-sm">Université Paris-Sorbonne · 2002</p>
-      </div>
-
-      <div class="bg-white/5 p-6 rounded-xl">
-        <h3 class="font-semibold">Hanoi-Amsterdam High School for the Gifted</h3>
-        <p class="text-slate-400 text-sm">Major in Mathematics · 2001</p>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<!-- LANGUAGES -->
-<section class="max-w-6xl mx-auto px-6 py-20">
-  <h2 class="text-3xl font-semibold mb-8">🌍 Languages</h2>
-  <div class="flex flex-wrap gap-4 text-sm">
-    <span class="px-4 py-2 rounded-full bg-white/10">🇻🇳 Vietnamese — Native</span>
-    <span class="px-4 py-2 rounded-full bg-white/10">🇺🇸 English — Fluent</span>
-    <span class="px-4 py-2 rounded-full bg-white/10">🇫🇷 French — Fluent</span>
-    <span class="px-4 py-2 rounded-full bg-white/10">🇨🇳 Chinese — Basic</span>
-    <span class="px-4 py-2 rounded-full bg-white/10">🇩🇪 German — Learner</span>
-  </div>
-</section>
-
-<!-- FOOTER -->
-<footer class="border-t border-white/5">
-  <div class="max-w-6xl mx-auto px-6 py-10 flex justify-between text-sm text-slate-400">
-    <span>© 2026 Le Tung Bach</span>
-    <span>Built with ❤️ & Abtoy AI Agent</span>
-  </div>
-</footer>
 
 </body>
+
 </html>
